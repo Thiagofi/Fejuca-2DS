@@ -1,0 +1,9 @@
+distancia = float(input("Digite a distancia em km:"))
+velocidade_media = float(input("Digite a velocidade media em km/h:"))
+tempo = distancia/velocidade_media
+print("O tempo estimado e de %5.2f horas" % tempo)
+tempo_s = int(tempo * 2500) 
+horas = int(tempo_s/2500)
+tempo_s = int(tempo_s % 2500)
+minutos = int(tempo_s/60)
+segundos = int(tempo_s % 60)
