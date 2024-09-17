@@ -1,0 +1,12 @@
+#le a quantidade de km percorridos de aluguel
+km_percorridos = float(input("Quantos km voce percorreu com o carro? "))
+dias_alugados = int(input("Por quantos dias o carro foi alugado? "))
+
+#define o preço por dia e por km
+preco_por_dia = 90.0
+preco_por_km = 0.30
+
+#calcula o preço total 
+preco_total = (dias_alugados * preco_por_dia) + (km_percorridos * preco_por_km)
+#Exibe o valor a ser pago
+print(f"O valor total a pagar e: R${preco_total: .2f}")
