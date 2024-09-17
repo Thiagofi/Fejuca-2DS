@@ -1,0 +1,10 @@
+valor_casa = float(input("Valor da casa: R$ "))
+salario = float(input("Salarioa: R$ "))
+anos = int(input("Anos para pagar: "))
+
+prestacao = valor_casa / (anos * 12)
+
+if prestacao <= 0.3 * salario:
+    print("Emprestimo APROVADO!")
+else:
+    print("Emprestimo NEGADO!")
