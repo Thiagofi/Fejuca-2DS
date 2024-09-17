@@ -1,0 +1,29 @@
+class Carro:
+    def __init__(self , marca, modelo, cor, ano, valor):
+        self.marca=marca
+        self.modelo=modelo
+        self.cor=cor
+        self.ano=ano
+        self.valor=valor
+class Estoque:
+    def __init__(self):
+        self.motos=[]
+    def Adicionar_Moto(self,motos):
+        self.motos.append(motos)
+    def Mostra_Estoque(self):
+        for motos in self.motos:
+            print(f'{motos.modelo}, {motos.marca} adicionado ao estoque ')
+moto_1=Carro('bmw','1200','branca','2024', 117900)
+moto_2=Carro('yamaha','mt07','preta','2024', 46990)
+moto_3=Carro('honda','africa twin','vermelha','2024', 81110)
+moto_4=Carro('bajaj','dominar 400','preta','2023', 24990)
+moto_5=Carro('yamaha','tracer 900','azul','2024', 57890)
+
+estoque=Estoque()
+estoque.Adicionar_Moto(moto_1)
+estoque.Adicionar_Moto(moto_2)
+estoque.Adicionar_Moto(moto_3)
+estoque.Adicionar_Moto(moto_4)
+estoque.Adicionar_Moto(moto_5)
+
+estoque.Mostra_Estoque()
