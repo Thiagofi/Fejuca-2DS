@@ -1,0 +1,12 @@
+#Le tres numeros do usuario
+numero_1 = float(input("Digite o primeiro numero: "))
+numero_2 = float(input("Digite o segundo numero: "))
+numero_3 = float(input("Digite o terceiro numero: "))
+
+#Encontre o maior e o menor numero
+maior = max(numero_1, numero_2, numero_3)
+menor = min(numero_1, numero_2, numero_3)
+
+#Exibe os resultados
+print(f"O maior numero e: {maior}")
+print(f"O menor numero e: {menor}")
