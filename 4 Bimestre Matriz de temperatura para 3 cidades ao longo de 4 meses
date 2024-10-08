@@ -1,0 +1,20 @@
+# Matriz de temperatura para 3 cidades ao longo de 4 meses
+temperaturas = [
+    [22, 25, 28, 32],  # Cidades 1 (Janeiro a abril)
+    [20, 23, 26, 30],  # Cidades 2 (Janeiro a abril)
+    [18, 22, 25, 29],  # Cidades 3 (Janeiro a abril)
+]
+
+def transpor_matirz(matriz):
+    return [list(linha) for linha in zip(*matriz)]
+
+def exibir_matriz(matriz):
+    for linha in matriz:
+        print(" ".join(f"{valor:>4}" for valor in linha))
+
+# Trasnpondo a matriz
+matriz_transposta = transpor_matirz(temperaturas)
+
+# Exibindo a matriz transposta
+print("Matriz Transposta (Meses x Cidades):")
+exibir_matriz(matriz_transposta)
